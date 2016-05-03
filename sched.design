@@ -1,9 +1,9 @@
-This patch implements a lottery scheduling policy on MINIX 3.1.7.
+This patch implements a Hybrid scheduling policy on MINIX 3.3.0.
 The policy is mainly implemented on the servers side, with only a few
 modifications in kernel.
 
 === Background ===
-As you may know, since 3.1.7 MINIX has moved scheduling from kernel to a
+As you may know, since 3.3.0 MINIX has moved scheduling from kernel to a
 user-level process "sched".
 In the original user-level process "sched", a simple policy receives messages
 from kernel, initializes or changes a process's priority or nice value, and send
